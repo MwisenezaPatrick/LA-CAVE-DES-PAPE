@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Product -La Cave Des Pape</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+	<div class="container">
+	     <div class="navbar">
+<!---		<div class="logo">
+			<img src="images/LOGO.jpg" width="100px">
+		</div>   -->
+		<h1 style="text-align: center;" >La Cave Des Pape</h1>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="homepage.php">Home</a></li>
+				<li><a href="">Products</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="index.php">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="images/cart1.png" width="30" height="30px"></a>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	</div>
+	
+<!--------All product -------->
+  <div class="small-container"> 
+  <div class="row row-2" >
+      <h2>All Products</h2>
+      <select>
+          <option>Default Shorting</option>
+          <option>Short by price </option>
+          <option>Short by popularity</option>
+          <option>Short by rating</option>
+          <option>Short by sale</option>
+      </select>
+  </div>	
+
+  <div class="row">
+  	<div class="col-4" onclick="window.location.href='product_details.html';">
+  		<img src="images/image14.jpg">
+  		<h4>Laurent-Perrier Alexandra Rose<br>
+         Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-o"></i>
+  		</div>
+  		<p>KES 43,613</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  		<div class="col-4">
+  		<img src="images/image15.jpg">
+  		<h4> Dom Perignon Brut<br>
+         Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-half-o"></i>
+  		</div>
+  		<p>KES 33,132</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  		<div class="col-4">
+  		<img src="images/image16.jpg">
+  		<h4>Veuve Clicquot Ponsardin Yellow Brut<br>
+        Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-half"></i>
+  			<i class="fa fa-star-o"></i>
+  		</div>
+  		<p>KES 11,833</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  		<div class="col-4">
+  		<img src="images/image13.jpg">
+  		<h4>Laurent-Perrier Cuvee Rose Brut<br>
+         Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-o"></i>
+  		</div>
+  		<p>KES  11,157</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+</div>
+  <div class="row">
+  	<div class="coll-5">
+  		<img src="images/image1.jpg">
+  		<h4>Laurent-Perrier Alexandra Rose<br>
+         Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-o"></i>
+  		</div>
+  		<p>KES 43,613</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  		<div class="coll-5">
+  		<img src="images/image2.jpg">
+  		<h4> Dom Perignon Brut<br>
+         Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-half-o"></i>
+  		</div>
+  		<p>KES 33,132</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  		<div class="coll-5">
+  		<img src="images/image.jpg">
+  		<h4>Veuve Clicquot Ponsardin Yellow Brut<br>
+        Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-half"></i>
+  			<i class="fa fa-star-o"></i>
+  		</div>
+  		<p>KES 11,833</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  		<div class="coll-5">
+  		<img src="images/image.9.jpg">
+  		<h4>Laurent-Perrier Cuvee Rose Brut<br>
+         Champagne, France</h4>
+  		<div class="rating">
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star"></i>
+  			<i class="fa fa-star-o"></i>
+  		</div>
+  		<p>KES  11,157</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+  	</div>
+  </div>
+<div class="row">
+    <div class="col-4">
+        <img src="images/image14.jpg">
+        <h4>Laurent-Perrier Alexandra Rose<br>
+         Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>KES 43,613</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+        <div class="col-4">
+        <img src="images/image15.jpg">
+        <h4> Dom Perignon Brut<br>
+         Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>KES 33,132</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+        <div class="col-4">
+        <img src="images/image16.jpg">
+        <h4>Veuve Clicquot Ponsardin Yellow Brut<br>
+        Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>KES 11,833</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+        <div class="col-4">
+        <img src="images/image13.jpg">
+        <h4>Laurent-Perrier Cuvee Rose Brut<br>
+         Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>KES  11,157</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+</div>
+<div class="row">
+    <div class="coll-5">
+        <img src="images/image1.jpg">
+        <h4>Laurent-Perrier Alexandra Rose<br>
+         Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>KES 43,613</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+        <div class="coll-5">
+        <img src="images/image2.jpg">
+        <h4> Dom Perignon Brut<br>
+         Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>KES 33,132</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+        <div class="coll-5">
+        <img src="images/image.jpg">
+        <h4>Veuve Clicquot Ponsardin Yellow Brut<br>
+        Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>KES 11,833</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+        <div class="coll-5">
+        <img src="images/image.9.jpg">
+        <h4>Laurent-Perrier Cuvee Rose Brut<br>
+         Champagne, France</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>KES  11,157</p>
+        <a href="cart.html" class="btn cart-btn">Add to Cart</a>
+    </div>
+</div>
+
+<div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>&#8594;</span>
+</div>
+</div>
+   <!---- footer ---->
+
+   <div class="footer">
+   	   <div class="container">
+   	   	   <div class="row">
+   	   	   <div class="footer-col-1">
+   	   	   	<h3>Download Our App</h3>
+   	   	   	<p>Download App for Android and ios mobile phone.</p>
+   	   	   	<div class="app-log">
+   	   	   		<img src="images/play-store.jpg">
+   	   	   		<img src="images/app-store.jpg">
+   	   	   	</div>
+   	   	   </div>
+   	   	    <div class="footer-col-2">
+   	   	   	<h3>Our Mission</h3>
+   	   	   	<p>Our Purpose Is To Sustainably Drinks to the Many</p>
+   	   	   </div>
+   	   	    <div class="footer-col-3">
+   	   	   	<h3>Useful Links</h3>
+   	   	   	<ul>
+   	   	   		<li>Coupons</li>
+   	   	   		<li>Blog Post</li>
+   	   	   		<li>Return Policy</li>
+   	   	   		<li>Join Affiliate</li>
+   	   	   	</ul>
+   	   	   </div>
+   	   	    <div class="footer-col-4">
+   	   	   	<h3>Follow us</h3>
+   	   	   	<ul>
+   	   	   		<li>Facebook</li>
+   	   	   		<li>Twitter</li>
+   	   	   		<li>Instagram</li>
+   	   	   		<li>YouTube</li>
+   	   	   	</ul>
+   	   	   </div>
+   	   	 </div>
+   	   	 <hr>
+   	   	 <p class="copyright">Copyright 2024 -Patrick Mwiseneza</p>
+   	   </div>
+   </div>
+</div>
+<!-------js for toggle menu ----->
+   <script>
+   	var MenuItems =document.getElementById("MenuItems");
+
+   	MenuItems.style.maxHeight = "0px";
+
+   	function menutoggle(){
+         if(MenuItems.style.maxHeight == "0px")
+         	  {
+         	  	MenuItems.style.maxHeight = "200px"
+         	  }
+         else
+              {
+         	    MenuItems.style.maxHeight = "0px"
+              }
+   	}
+   </script>
+
+
+</body>		
+</html>
