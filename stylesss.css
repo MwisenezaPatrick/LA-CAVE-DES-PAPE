@@ -7,7 +7,7 @@
 body{
    
     background: radial-gradient(#fff,#ffd6d6);
-    background: linear-gradient(to right #e2e2, #c9d6ff); */
+    background: linear-gradient(to right #e2e2, #c9d6ff); 
 }
 .container{
     background: #fff;
@@ -63,7 +63,7 @@ label{
     cursor: auto;
     transition: 0.3s;
 }
-*/
+
 input:focus~label,.input:not(:placeholder-shown)~label{
     top: -3em;
     color: hsl(327,90%,28%);
@@ -139,3 +139,4 @@ button:hover{
     text-decoration: underline;
     color: blue;
 }
+
