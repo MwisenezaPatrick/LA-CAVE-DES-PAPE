@@ -22,10 +22,16 @@
             <label for="lName">Last Name</label>
         </div>
         <div class="input-group">
+            <i class="fas fa-phone"></i>
+            <input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+            <label for="email">Phone</label>
+        </div>
+        <div class="input-group">
             <i class="fas fa-envelope"></i>
             <input type="email" name="email" id="email" placeholder="Email" required>
             <label for="email">Email</label>
         </div>
+        
         <div class="input-group">
             <i class="fas fa-lock"></i>
             <input type="password" name="password" id="password" placeholder="Password" required>

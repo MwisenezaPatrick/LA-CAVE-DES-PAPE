@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --black:#333;
+    --white:#FFF;
+    --light-color:#666;
+    --light-bg:#EEEEEE;
+    --main-color:#C08261;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::selection{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.header{
+    position: fixed;
+    top: 0;left: 20rem;right: 0;
+    background: radial-gradient(#fff,#ffd6d6);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+
+}
+.header .image{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.header .image img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: .1rem .5rem 1rem black;
+}
+.header .image p{
+    color: black;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+}
+.header .icon i{
+    font-size: 3rem;
+    color: black;
+}
+.header .input{
+    background-color: white;
+    width: 30rem;
+    padding:.5rem 1rem;
+    border-radius: 3rem;
+    border: .1rem solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .input input{
+    width: 100%;
+    padding: 0 1rem;
+}
+.header .input i{
+    font-size: 2rem;
+    color: black;
+}
+.header .input i:hover,
+.header .icon i:hover{
+    color: goldenrod;
+}
+
+.sideBar{
+    position: fixed;
+    top: 0;left: 0;bottom: 0;
+    background: radial-gradient(#fff,#ffd6d6);
+    width: 20rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.sideBar .logo p{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+.sideBar .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    width: 100%;
+}
+.sideBar .menu a i{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    width: 3rem;
+}
+.sideBar .menu a{
+    color: black;
+    font-size: 1.5rem;
+    margin: .2rem 0;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+.sideBar .menu a:hover{
+    background-color: white;
+    color: black;
+}
+.container{
+    position: absolute;
+    top: 10rem; left: 23rem;
+    width: 75%;
+}
+.container .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.container .box-container .box{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .box-container .box:hover{
+    background-color: lightskyblue;
+    
+}
+.container .box-container .box p{
+    color: black;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+.container .box-container .box:hover p{
+    color: white;
+}
+.container .box-container .box span{
+    color: black;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    nav-down: 700;
+}
+.container .box-container .box:hover span{
+    color: white;
+}
+.container .box-container .box .icon i{
+    font-size: 2rem;
+    color: main-color;
+}
+.container .tables{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+}
+.container .tables .table{
+    margin-top: 3rem;
+}
+.container .tables .table table{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+    width: 45rem;
+}
+.container .tables .table table tr th{
+    text-align: left;
+    padding-left: 1rem;
+}
+.container .tables .table table tr td{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+.container .tables .table table tr .green
+,.container .tables .table table tr .blue,
+.container .tables .table table tr .red,
+.container .tables .table table tr .yellow{
+    background-color: green;
+    padding: 0 1rem;
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+}
+.container .tables .table table tr .blue{
+    background-color: lightskyblue;
+}
+.container .tables .table table tr .red{
+    background-color: red;
+}
+.container .tables .table table tr .yellow{
+    background-color: gold;
+}
+.container .tables .table .table-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding:0 1rem;
+}
+.container .tables .table .table-header h3{
+    font-size: 1.9rem;
+    color: black;
+}
+.container .tables .table .table-header .btn{
+    font-size: 1.4rem;
+    background-color: main-color;
+    color: black;
+    padding: .2rem 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+    font-weight: 900;
+}
+.container .tables .table .table-header .btn:hover{
+    background-color: lightskyblue;
+    color: main-color;
+    border: .1rem solid main-color;
+}
+.container .customers-table{
+    margin-top: 5rem;
+
+}
+.container .tables .customers{
+    width: 40rem;
+    padding: 2rem 0;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.container .customers-table h3{
+    font-size: 1.9rem;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.container .tables .customers .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.container .tables .customers .box-container .customer{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    width: 90%;
+}
+.container .tables .customers .box-container .customer img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+.container .tables .customers .box-container .customer .content p{
+    font-size: 1.2rem;
+    color: black;
+    text-transform: lowercase;
+}
+.container .tables .customers .box-container .customer .content span{
+    font-size: 1.2rem;
+    color: orange;
+    text-transform: lowercase;
+}
+.container .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .flex p{
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+.container .flex p i{
+    color: black;
+}
+.container .flex .plus{
+    background-color: black;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.container .flex .plus:hover{
+    background-color: orange;
+}
+.container .table{
+    background-color: lightskyblue;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+    width: 100%;
+    padding: 2rem;
+}
+.container .table .tr{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem;
+    border-bottom: .1rem solid #666; 
+}
+
+.container .table .tr.th{
+   background: radial-gradient(#fff,#ffd6d6);
+   display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+.container .table .tr h3{
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-bottom: none;
+}
+.container .table .email{
+    margin-right: 8rem;
+}
+.container .table .tr img{
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container .table .tr p{
+    padding-left: 2rem;
+}
+.container .table .tr .edit,
+.container .table .tr .remove{
+      font-size: 1.1rem;
+      color: white;
+      padding: .5rem 2rem;
+      border-radius: 1rem;
+}
+.container .table .tr .edit{
+    background-color: lightgreen;
+    padding: .5rem 1.5rem;
+}
+.container .table .tr .edit:hover{
+    background-color: green;
+}
+.container .table .tr .remove{
+    background-color: lightcoral;
+}
+.container .table .tr .remove:hover{
+    background-color: red;
+}
+/* stlyle add customer */
+.add-customer {
+    position: fixed;
+    top: 55%;
+    left: 40%;
+    border-radius: 2rem;
+    bottom: 55;
+    right: 20%;
+    background-color: #333;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    opacity: 0;
+    flex-direction: column;
+    clip-path: polygon(51% 48%, 51% 48%, 51% 48%, 51% 48%);
+}
+.add-customer.active {
+    transform: scale(1);
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.add-customer p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.add-customer i {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem; right: 2rem;
+}
+
+.add-customer .input {
+    background-color: white;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    border: .1rem solid black;
+    width: 100%;
+    text-transform: lowercase;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+}
+
+.add-customer .flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-customer .btn {
+    background-color: var(--main-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: black;
+}
+
+.add-customer-container {
+    background-color: white;
+    border-radius: .5rem;
+    width: 50rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid black;
+}
+
+.container .flex a {
+    background-color: var(--main-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: black;
+}
+
+.container .flex p {
+    font-size: 2rem;
+    color: black;
+}
+
+.table {
+    padding: 1rem;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table .tr {
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: 12rem 20rem 30rem 20rem 20rem 15rem 15rem;
+    gap: 1rem;
+    margin: 1rem 0;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+
+.table .tr img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.table .tr p {
+    font-size: 1.5rem;
+    color: black;
+    text-transform: lowercase;
+}
+
+.table .tr a {
+    font-size: 1.5rem;
+    color: black;
+    background-color: var(--main-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+}
+
+.table .tr a:hover {
+    background-color: var(--black);
+    color: white;
+}
+
+.table .tr:hover {
+    background-color: var(--main-color);
+}
+
+.table .tr:hover p {
+    color: white;
+}
+
+.table .tr:hover a {
+    background-color: var(--black);
+    color: white;
+}
+
+.table .tr:hover img {
+    box-shadow: 0 .5rem 1rem white;
+}
+
+.th {
+    background-color: white;
+    box-shadow: none;
+    border: .1rem solid black;
+}
+
+.th h3 {
+    font-size: 1.5rem;
+    color: black;
+}
+/* style products */
+.products .products-header{
+    color: black;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+.products .products-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .products-header h3 span{
+    color: var(--main-color);
+}
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.products .box-container .product-box{
+    border: .1rem solid var(--black);
+    
+}
+.products .box-container .product-box img{
+    height: 13rem;
+    width: 8rem; 
+    object-fit: cover;
+}
+.products .box-container .product-box h3{
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin: .5rem 0;
+}
+.products .products-header .plus{
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    width: 5rem; height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.products .products-header .plus:hover{
+    background-color: var(--black);
+}
+.products .box-container .product-box .stars i{
+    font-size: 1rem;
+    color: goldenrod;
+}
+.products .box-container .product-box .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .box-container .product-box .flex p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.products .box-container .product-box .flex .btn{
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+.products .box-container .product-box .flex .btn:hover{
+    background-color: var(--black);
+}
+.products .remove-edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.products .remove-edit .remove{
+    background-color: red;
+    color: var(--white);
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+}
+.products .remove-edit .edit{
+    background-color: var(--black);
+    color: var(--white);
+    padding: .5rem 2.5rem;
+    font-size: 1.3rem;
+}
+.products .remove-edit .edit:hover,
+.products .remove-edit .remove:hover{
+    border-radius: 3rem;
+}

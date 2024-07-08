@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sideBar">
+        <div class="logo">
+            <p>La cave des pape</p>
+        </div>
+        <div class="menu">
+            <a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>dashboard</a>
+            <a href="customers.html"><i class="fa fa-users" aria-hidden="true"></i> customers</a>
+            <a href="products.html"><i class="fa fa-database" aria-hidden="true"></i>products</a>
+            <a href="orders.html"><i class="fa fa-check-circle" aria-hidden="true"></i>orders</a>
+            <a href="messages.html"><i class="fa fa-comments" aria-hidden="true"></i>messages</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>sign out</a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="input">
+            <input type="search" placeholder="search ...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="image">
+            <img src="../images/cl2.jpg">
+            <p>Patrick</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <div class="content">
+                    <p>400</p>
+                    <span>products</span>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-database" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <p>120</p>
+                    <span>orders</span>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <p>300</p>
+                    <span>messages</span>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <p>100</p>
+                    <span>customers</span>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="tables">
+            <div class="table">
+                <div class="table-header">
+                    <h3>recent orders</h3>
+                    <a href="#" class="btn">view all</a>
+                </div>
+                <table>
+                    <tr><th>name</th><th>price</th><th>payment</th><th>status</th></tr>
+                    <tr><td>Laurent-Perrier Alexandra Rose
+                    Champagne, France</td><td>KES 43,613</td><td>paid</td><td class="green">delivered</td></tr>
+                    <tr><td>Dom Perignon Brut
+                   Champagne, France</td><td>KES 33,132</td><td>paid</td><td class="red">return</td></tr>
+                    <tr><td>Veuve Clicquot Ponsardin Yellow Brut
+                    Champagne, France</td><td>KES 11,833</td><td>paid</td><td class="yellow">pending</td></tr>
+                    <tr><td>Laurent-Perrier Cuvee Rose Brut
+                     Champagne, France</td><td>KES 11,157</td><td>paid</td><td class="blue">in progress</td></tr>
+                    <tr><td>Moet & Chandon
+                    Champagne, France</td><td>KES 13,613</td><td>paid</td><td class="green">delivered</td></tr>
+                </table>
+            </div>
+            <div class="customers-table">
+                <h3>recent customers</h3>
+                <div class="customers">                
+                    <div class="box-container">
+                        <div class="customer">
+                            <img src="../imagess/cl2.jpg" alt="">
+                            <div class="content">
+                                <p>patrick</p>
+                                <span>nairobi</span>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <img src="../imagess/cl3.jpg" alt="">
+                            <div class="content">
+                                <p>peter</p>
+                                <span>nairobi</span>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <img src="../imagess/cl4.jpg" alt="">
+                            <div class="content">
+                                <p>celine</p>
+                                <span>nairobi</span>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <img src="../imagess/cl5.jpg" alt="">
+                            <div class="content">
+                                <p>omari</p>
+                                <span>nairobi</span>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <img src="../imagess/cl6.jpg" alt="">
+                            <div class="content">
+                                <p>savant</p>
+                                <span>nairobi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+           
+    </div>   
+</body>
+</html>

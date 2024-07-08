@@ -9,6 +9,7 @@ if($conn->connect_error){
     echo "Fail to connect DB".$conn->connect_error;
 }
 
+
 if(isset($_POST["add"])){
     $productId = $_POST["product_id"];
     $productName = $_POST["hidden_name"];
