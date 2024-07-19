@@ -39,7 +39,7 @@ if(isset($_POST["add"])){
     			<li><a href="homepage.php">Home</a></li>
     			<li><a class="active" href="product.php">Product</a></li>
     			<li><a href="about.html">About</a></li>
-    			<li><a href="contact.html">Contact</a></li>
+    			<li><a href="contact.php">Contact</a></li>
                 <li><a href="index.php">Account</a></li>
     			<a href="cart.php"><img src="images/cart1.png" width="30" height="30px"></a>
     		</ul>
@@ -465,7 +465,7 @@ if(isset($_POST["add"])){
    	   	   </div>
    	   	 </div>
    	   	 <hr>
-   	   	 <p class="copyright">Copyright 2024 -Patrick Mwiseneza</p>
+   	   	 <p class="copyright">Copyright 2024 -Patrick Mwiseneza. Alcohol abuse is dangerous to your health. Please drink responsibly.</p>
    	   </div>
    </div>
 </div>

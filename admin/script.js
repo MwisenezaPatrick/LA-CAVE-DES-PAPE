@@ -11,3 +11,4 @@ document.addEventListener('DOMContentLoaded', function() {
         add_customer.classList.remove("active");
     };
 });
+

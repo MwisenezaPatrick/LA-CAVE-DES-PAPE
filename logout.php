@@ -1,4 +1,6 @@
 <?php
-session_destroy()
-header("location: homepage.php");
-?>
+session_start(); 
+session_destroy();
+header("Location: homepage.php");
+exit(); 
+

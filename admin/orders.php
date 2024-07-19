@@ -1,3 +1,7 @@
+<?php
+// Any PHP logic or includes can be placed here if needed
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +17,11 @@
             <p>La cave des pape</p>
         </div>
         <div class="menu">
-            <a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>dashboard</a>
-            <a href="customers.html"><i class="fa fa-users" aria-hidden="true"></i> customers</a>
-            <a href="products.html"><i class="fa fa-database" aria-hidden="true"></i>products</a>
-            <a href="orders.html"><i class="fa fa-check-circle" aria-hidden="true"></i>orders</a>
-            <a href="messages.html"><i class="fa fa-comments" aria-hidden="true"></i>messages</a>
+            <a href="dashboard.php"><i class="fa fa-tachometer" aria-hidden="true"></i>dashboard</a>
+            <a href="customers.php"><i class="fa fa-users" aria-hidden="true"></i> customers</a>
+            <a href="products.php"><i class="fa fa-database" aria-hidden="true"></i>products</a>
+            <a href="orders.php"><i class="fa fa-check-circle" aria-hidden="true"></i>orders</a>
+            <a href="messages.php"><i class="fa fa-comments" aria-hidden="true"></i>messages</a>
             <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>sign out</a>
         </div>
     </div>
@@ -31,7 +35,7 @@
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <div class="image">
-            <img src="../images/cl2.jpg">
+            <img src="../images/cl2.jpg" alt="Patrick's Image">
             <p>Patrick</p>
         </div>
     </header>

@@ -130,7 +130,8 @@ if(isset($_GET["action"]) && $_GET["action"] == "delete"){
             </div>
         </div>
         <hr>
-        <p class="copyright">Copyright 2024 - Patrick Mwiseneza</p>
+        <p class="copyright">Copyright 2024 - Patrick Mwiseneza. Alcohol abuse is dangerous to your health. Please drink responsibly.
+</p>
     </div>
 </div>
 </body>

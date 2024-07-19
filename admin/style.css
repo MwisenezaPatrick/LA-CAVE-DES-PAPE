@@ -652,3 +652,224 @@ html{
 .products .remove-edit .remove:hover{
     border-radius: 3rem;
 }
+/* Style for orders */
+.container .order-table {
+    width: 100%;
+}
+
+.container .order-table th {
+    text-align: left;
+    background-color: black;
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.container .order-table td {
+    padding: 0.5rem 1rem; 
+    background-color: var(--light-bg);
+}
+
+.container .order-table td p {
+    font-size: 1.2rem;
+    color: var(--black);
+    text-transform: lowercase;
+}
+.container .order-table td p.status{
+    color: var(--white);
+    border-radius: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.container .order-table td p.del{
+    background-color: green;
+}
+.container .order-table td p.ret{
+    background-color: red;
+}
+.container .order-table td p.pend{
+    background-color: lightseagreen;
+}
+.container .order-table td p.details{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container .order-table td p.details:hover{
+    color: red;
+}
+/*style for messages */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Table container styling */
+.table-container {
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 15px;
+    overflow-x: auto;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 17px 15px;
+    text-align: left;
+    font-size: 12px;
+}
+
+table thead tr {
+    background-color: #d3a779;
+    color: #0c0b0b;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #e9e9e9;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #eec596;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* style for orders table */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --black: #333;
+    --white: #FFF;
+    --light-color: #666;
+    --light-bg: #EEEEEE;
+    --main-color: #C08261;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 20rem;
+    right: 0;
+    background: radial-gradient(#fff, #ffd6d6);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+
+.header .image {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .image img {
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: .1rem .5rem 1rem black;
+}
+
+.header .image p {
+    color: black;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+}
+
+.header .icon i {
+    font-size: 3rem;
+    color: black;
+}
+
+.header .input {
+    background-color: white;
+    width: 30rem;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    border: .1rem solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .input input {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.header .input i {
+    font-size: 2rem;
+    color: black;
+}
+
+.header .input i:hover,
+.header .icon i:hover {
+    color: goldenrod;
+}
+
+
+
